@@ -70,7 +70,7 @@ class R2D2 {
     constructor() {
         this.x = 1;
         this.y = 1;
-        this.battery = 1000;
+        this.battery = 100;
         this.matrix = Matrix.generateMatrix();
     }
 
@@ -154,7 +154,7 @@ class R2D2 {
                             if(this.matrix[this.y][this.x] === 2)  {
                                 this.battery += 50;
                             }
-                            
+
                             this.matrix[this.y][this.x] = 5;
                             this.matrix[this.y + 1][this.x] = 0;
                         }  
@@ -230,7 +230,6 @@ class R2D2 {
         this.battery -= 5;
         tableContainer.removeChild(table);
         Matrix.generateTable(this.matrix);
-        console.log(this.matrix)
     }
 
     victory() {
