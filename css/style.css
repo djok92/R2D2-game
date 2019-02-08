@@ -66,3 +66,11 @@ box-sizing: border-box
     width: 70px;
     display: block;
 }
+
+.battery-container {
+    display: none;
+    position: absolute;
+    top: 100;
+    font-size: 36px;
+    padding: 20px;
+}
